@@ -1,0 +1,644 @@
+* {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(37, 42, 48);
+  height: 1800px;
+}
+
+.CONTAINER {
+  height: 800px;
+  background: rgba(0, 0, 0, 0.4) url(chair.jpg);
+  width: 100%;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+nav {
+  display: flex;
+}
+.left {
+  height: 140px;
+  width: 95%;
+}
+
+.logo {
+  padding: 5% 0 0 6%;
+}
+
+.logoimg {
+  width: 8%;
+  border-radius: 50%;
+}
+ul {
+  float: right;
+  display: flex;
+}
+li {
+  padding: 45px 5px 0px 0px;
+  list-style: none;
+}
+ul li a {
+  font-weight: lighter;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 0 30px 0 30px;
+  font-weight: 600;
+}
+.menu-btn i {
+  color: honeydew;
+  font-size: 25px;
+  display: none;
+  cursor: pointer;
+  padding: 6px 0px 6px 19px;
+}
+#click {
+  display: none;
+}
+ul li a:hover,
+ul li a.active {
+  /* color: rgb(68 115 115);
+  background-color: rgb(103 212 200);
+  border-radius: 40px; */
+  color: rgb(90, 209, 179);
+  text-decoration: underline;
+}
+.bio {
+  color: rgb(186 221 222 / 1);
+  margin: 12% 0px 0px 20%;
+}
+.hii {
+  font-size: 22px;
+  padding-bottom: 1px;
+}
+.name {
+  font-size: 90px;
+  font-family: rajdhani;
+}
+.iamapro {
+  font-size: 35px;
+  font-family: rajdhani;
+}
+.aboutbox {
+  height: 1000px;
+  /* margin-top: 80px; */
+
+  display: flex;
+  background: rgba(0, 0, 0, 0.8) url(white.jpg);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box {
+  padding: 5% 11% 0% 5%;
+}
+
+#aboutme {
+  padding: 75px 0 0 0;
+  font-family: rajdhani;
+  color: #53c7b7;
+  font-size: 300%;
+}
+.box p {
+  text-align: justify;
+  color: #6dcbda;
+  font-family: rajdhani;
+  font-size: 140%;
+  padding: 65px 0px 60px 20px;
+  font-weight: 400;
+}
+table li {
+  color: #53c7b7;
+  font-family: rajdhani;
+  font-size: 30px;
+  padding: 50px 80px 0px 15px;
+}
+#contact {
+  height: 800px;
+  background: rgba(0, 0, 0, 0.85) url(guitar.jpg);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5% 11% 0% 5%;
+}
+.icon-box {
+  display: flex;
+  padding: 23% 0px 0px 0;
+}
+#contact h2 {
+  font-size: 45px;
+  padding: 75px 0 0 0;
+  font-family: rajdhani;
+  color: #53c7b7;
+}
+
+.mail {
+  margin: 0px 0 0 20%;
+  padding: 15px 0px 10px 0px;
+  /* border: 2px solid #53c7b7; */
+  border-radius: 51%;
+}
+.insta {
+  margin: 0px 0 0 25%;
+  padding: 13px 0px 8px 0px;
+  /* border: 2px solid #53c7b7; */
+  border-radius: 51%;
+}
+.fb {
+  margin: 0px 0 0 20%;
+  padding: 20px 5px 10px 5px;
+  /* border: 2px solid#53c7b7; */
+  border-radius: 51%;
+}
+#insta {
+  padding: 18px 16px 13px 16px;
+  color: #53c7b7;
+}
+#mail {
+  padding: 18px 16px 13px 16px;
+  color: #53c7b7;
+}
+#fb {
+  padding: 18px 16px 13px 16px;
+  color: #53c7b7;
+}
+#fb:hover {
+  color: #000000;
+}
+.fb:hover {
+  background: #53c7b7;
+}
+#insta:hover {
+  color: #000000;
+}
+.insta:hover {
+  background: #53c7b7;
+}
+#mail:hover {
+  color: #000000;
+}
+.mail:hover {
+  background: #53c7b7;
+}
+#insta i {
+  font-size: 50px;
+}
+#mail i {
+  font-size: 35px;
+}
+#fb i {
+  font-size: 33px;
+}
+.footer {
+  top: 90%;
+  margin: 157px 0 0px 43%;
+  color: #3fc5a4;
+}
+
+/* FOR TABS */ /* FOR TABS */ /* FOR TABS */ /* FOR TABS */ /*FOR TABS */ /* FOR TABS */ /* FOR TABS */ /* FOR TABS */ /* FOR TABS */ /* FOR TABS */ /* FOR TABS */
+@media (min-width: 951px) and (max-width: 1250px) {
+  .logoimg {
+    width: 13%;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 950px) {
+  .CONTAINER {
+    width: 100%;
+    height: 575px;
+  }
+
+  ul {
+    /* background-color: rgba(49, 49, 48, 0.61); */
+
+    transition: all 0.5s ease;
+    border-radius: 30px;
+    display: block;
+    height: 45vh;
+    /* height: 38vh; */
+    margin-top: -60px;
+    text-align: center;
+    position: fixed;
+    left: -100%;
+
+    width: 27%;
+  }
+  ul li a {
+    font-size: 15px;
+  }
+
+  ul li a:hover,
+  ul li a.active {
+    color: rgb(90, 209, 179);
+    background: transparent;
+  }
+  .menu-btn i {
+    display: block;
+    float: right;
+  }
+
+  .logoimg {
+    width: 16%;
+    border-radius: 50%;
+
+    margin: 28px 0px 0px 42%;
+  }
+
+  #click:checked ~ ul {
+    left: 0;
+  }
+  #click:checked ~ .menu-btn i::before {
+    content: "\f00d";
+    color: rgb(90, 209, 179);
+  }
+  .menu-btn i {
+    position: fixed;
+    margin: -21% -12px 0px 85%;
+    color: rgb(213, 231, 231);
+    font-size: 24px;
+  }
+
+  .bio {
+    color: rgb(186 221 222 / 1);
+    margin: 12% 0px 1px 27%;
+  }
+
+  .hii {
+    font-size: 12px;
+    padding-bottom: 1px;
+  }
+  .name {
+    font-size: 50px;
+    font-family: rajdhani;
+  }
+  .iamapro {
+    font-size: 19px;
+    font-family: rajdhani;
+  }
+  .aboutbox {
+    height: 900px;
+  }
+  #aboutme {
+    padding: 30px 0 0 25px;
+    font-size: 300%;
+  }
+  .box {
+    padding: 7% 5% 0% 8%;
+  }
+  .box p {
+    font-size: 130%;
+    padding: 60px 0px 60px 30px;
+    font-weight: 500;
+  }
+  .whiteimg {
+    display: none;
+  }
+  table li {
+    padding: 14px 0px 14px 0px;
+    margin: 0 0 10px 35px;
+    font-size: 150%;
+  }
+  #contact h2 {
+    padding: 37px 0 0 65px;
+    font-size: 270%;
+  }
+  /* .icon-box a{
+  font-size: 93%;
+} */
+}
+@media (max-width: 780px) {
+  ul {
+    height: 35vh;
+  }
+}
+/* -------media query for 630px screen size---------- */
+@media (max-width: 630px) {
+  .CONTAINER {
+    width: 100%;
+    height: 400px;
+  }
+  ul li a {
+    font-size: 13px;
+  }
+  ul {
+    text-align: center;
+    /* height: 45vh; */
+  }
+  li {
+    padding: 35px 0px 0px 0px;
+  }
+  .logoimg {
+    margin: 28px 0px 0px 41%;
+  }
+  .hii {
+    font-size: 9px;
+    padding-bottom: 1px;
+  }
+  .name {
+    font-size: 40px;
+    font-family: rajdhani;
+  }
+  .iamapro {
+    font-size: 15px;
+    font-family: rajdhani;
+  }
+  .aboutbox {
+    height: 1000px;
+  }
+  #aboutme {
+    font-size: 230%;
+  }
+  .box p {
+    font-size: 106%;
+  }
+  .whiteimg {
+    display: none;
+  }
+  table li {
+    margin: 0 0 10px 60px;
+    font-size: 120%;
+  }
+}
+/* -------media query for 530px screen size---------- */
+@media (max-width: 530px) {
+  a {
+    padding: 0px 0px 0 25px;
+    font-size: 13px;
+  }
+  .logoimg {
+    margin: 28px 0px 0px 41%;
+  }
+  ul {
+    text-align: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 38vh;
+  }
+  .menu-btn i {
+    font-size: 20px;
+
+    margin: -20% -12px 0px 80%;
+  }
+  li {
+    margin: 0 0 0 -23px;
+
+    list-style: none;
+  }
+  .hii {
+    font-size: 8px;
+    padding-bottom: 1px;
+  }
+  .name {
+    font-size: 30px;
+    font-family: rajdhani;
+  }
+  .iamapro {
+    font-size: 10px;
+    font-family: rajdhani;
+  }
+  .bio {
+    margin: 15% 0px 0px 30%;
+  }
+  #aboutme {
+    font-size: 200%;
+  }
+  .box p {
+    font-size: 88%;
+  }
+  .whiteimg {
+    display: none;
+  }
+  table li {
+    margin: 0 0 10px 60px;
+    font-size: 108%;
+  }
+  /* #contact h2 {
+    padding: 37px 0 0 45px;
+    font-size: 185%;
+  } */
+}
+/* -------media query for 500px screen size---------- */
+@media (max-width: 500px) {
+  .CONTAINER {
+    width: 100%;
+    height: 350px;
+  }
+  .logoimg {
+    margin: 28px 0px 0px 42%;
+  }
+  .menu-btn i {
+    margin: -21% -12px 0px 80%;
+    font-size: 18px;
+  }
+
+  .bio {
+    margin: 15% 0px 0px 32%;
+  }
+  ul {
+    top: 15%;
+    text-align: center;
+  }
+}
+/* FOR MOBILES FOR MOBILES FOR MOBILES FOR MOBILES FOR MOBILES FOR MOBILES FOR MOBILES FOR MOBILES  */
+@media (max-width: 440px) {
+  ul {
+    top: 15%;
+  }
+  a {
+    font-size: 10px;
+  }
+  .hii {
+    font-size: 8px;
+    padding-bottom: 1px;
+  }
+  .name {
+    font-size: 29px;
+    font-family: rajdhani;
+  }
+  .iamapro {
+    font-size: 11px;
+    font-family: rajdhani;
+  }
+  .bio {
+    margin: 18% 0px 0px 32%;
+  }
+  .menu-btn i {
+    font-size: 17px;
+
+    margin: -22% -12px 0px 77%;
+  }
+}
+@media (max-width: 415px) {
+  ul {
+    width: 30%;
+    text-align: center;
+  }
+  li {
+    margin: 0 0 0 -23px;
+  }
+  .aboutbox {
+    height: 915px;
+  }
+}
+@media (max-width: 330px) {
+  ul {
+    width: 37%;
+  }
+  #insta i {
+    font-size: 23px;
+  }
+  #mail i {
+    font-size: 12px;
+  }
+  #fb i {
+    font-size: 15px;
+  }
+}
+/* -------media query for TV screen size---------- */
+@media (min-width: 1650px) and (max-width: 1899px) {
+  .bio {
+    margin: 6% 0px 0px 25%;
+  }
+  .hii {
+    font-size: 188%;
+  }
+  .name {
+    font-size: 677%;
+  }
+  .iamapro {
+    font-size: 262%;
+  }
+  .CONTAINER {
+    height: 95vh;
+  }
+}
+@media (min-width: 1900px) and (max-width: 2360px) {
+  .CONTAINER {
+    height: 95vh;
+  }
+  .bio {
+    margin: 4% 0px 0px 20%;
+  }
+  .hii {
+    font-size: 210%;
+  }
+  .name {
+    font-size: 900%;
+  }
+  .iamapro {
+    font-size: 300%;
+  }
+}
+@media (min-width: 2360px) {
+  .CONTAINER {
+    height: 95vh;
+  }
+  .bio {
+    margin: 4% 0px 0px 27%;
+  }
+  .hii {
+    font-size: 210%;
+  }
+  .name {
+    font-size: 900%;
+  }
+  .iamapro {
+    font-size: 300%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .icon-box {
+    margin: 40px 0 0 -47px;
+  }
+  .footer {
+    margin: 277px 0 0px 39%;
+    color: #3fc5a4;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .icon-box {
+    margin: 45px 0 0 -35px;
+  }
+  .mail {
+    margin: 0px 0px 0 18%;
+  }
+  #contact h2 {
+    font-size: 40px;
+    padding: 75px 0 0 55px;
+  }
+  .footer {
+    margin: 337px 0 0px 34%;
+    color: #3fc5a4;
+    font-size: 15px;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  .icon-box {
+    margin: 115px 0 0 -35px;
+  }
+  .mail {
+    margin: 0px 0px 0 16%;
+  }
+  #contact h2 {
+    font-size: 35px;
+    padding: 75px 0 0 55px;
+  }
+  .insta {
+    margin: 0 0 0 30%;
+  }
+  #mail {
+    font-size: 14px;
+  }
+  #insta i {
+    font-size: 40px;
+  }
+  #mail i {
+    font-size: 30px;
+  }
+  #fb i {
+    font-size: 33px;
+  }
+  .footer {
+    margin: 337px 0 0px 36%;
+    /* color: #3fc5a4; */
+    font-size: 11px;
+  }
+}
+@media (max-width: 600px) {
+  .icon-box {
+    margin: 115px 0 0 -50px;
+  }
+  .mail {
+    margin: 0px 0px 0 16%;
+  }
+  #contact h2 {
+    font-size: 28px;
+    padding: 75px 0 0 55px;
+  }
+  .insta {
+    margin: 0 0 0 27%;
+  }
+  #insta i {
+    font-size: 30px;
+  }
+  #mail i {
+    font-size: 20px;
+  }
+  #fb i {
+    font-size: 23px;
+  }
+  .fb {
+    padding: 14px 5px 10px 5px;
+  }
+  .footer {
+    margin: 337px 0 0px 37%;
+    /* color: #3fc5a4; */
+    font-size: 9px;
+  }
+}
